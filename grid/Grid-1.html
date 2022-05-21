@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 1</title>
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+
+        body{
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center;  box-*/
+            background-color: #000;
+            min-height: 100vh;
+        }
+        .container{
+            max-width: 100%;
+            position: relative;
+
+            display: grid;
+            gap: 10px;
+            /* grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); */
+            grid-template-columns: repeat(auto-fit ,minmax(300px,1fr));
+            grid-template-rows: minmax(100px,auto);
+            grid-auto-flow: dense;
+        }
+        .box{
+            background-color: #161616;
+            border: 3px solid #dfdfdf;
+            border-radius: 5px;
+            /* width: 100px; */
+            /* height: 200px; */
+        }
+        .box-1{
+            background: url(https://images.unsplash.com/photo-1644982647708-0b2cc3d910b7?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774);
+            background-position: center;
+            background-size: cover;
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+        .box-2{
+            background: url(https://images.unsplash.com/photo-1652904429112-432f2905f2a1?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765);
+            background-position: center;
+            background-size: cover;
+            grid-column: span 1;
+            grid-row: span 4;
+        }
+        .box-3{
+            background: url(https://images.unsplash.com/photo-1640581825264-55c8455a1a8f?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774);
+            background-position: center;
+            background-size: cover;
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+        .box-4{
+            background: url(https://images.unsplash.com/photo-1623719795256-e4e2a827d887?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927);
+            background-position: center;
+            background-size: cover;
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+        .box-5{
+            background: url(https://images.unsplash.com/photo-1649094368573-2965ef470e5f?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870);
+            background-position: center;
+            background-size: cover;            grid-column: span 1;
+            grid-row: span 2;
+        }
+        .box-6{
+            background: url(https://images.unsplash.com/photo-1649094368533-b767a9514125?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870);
+            background-position: center;
+            background-size: cover;            grid-column: span 1;
+            grid-row: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1">
+
+        </div>
+        <div class="box box-2"></div>
+        <div class="box box-3"></div>
+        <div class="box box-4"></div>
+        <div class="box box-5"></div>
+        <div class="box box-6"></div>
+    </div>
+</body>
+</html>
