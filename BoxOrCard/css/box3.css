@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Noto+Sans+JP:wght@700&family=Roboto&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.cards{
+    padding: 1.5rem;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-gap: 10px;
+    // grid-template-rows: 900px;
+}
+.card{
+    // border: 3px solid red;
+    background-color: #161616;
+    color: #fff;
+    position: relative;
+}
+.card-info{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    display: flex;
+    // padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.likes{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    color: #adabab;
+}
+
+.likes span{
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.card-link{
+    // border: 3px solid red;
+}
+.card-link a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #adabab;
+}
+
+
+.card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content{
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.card-content h2{
+    margin-bottom: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1em;
+}
+
+.card-content p{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-size: 0.9em;
+    // padding: 1.5rem;
+    text-align: justify;
+}
+
+.card:nth-child(1){
+    grid-row: span 1;
+    grid-column: span 2;
+}
+.card:nth-child(4){
+    grid-row: span 1;
+    grid-column: span 2;
+}
+.card:nth-child(5){
+    grid-row: span 1;
+    grid-column: span 2;
+}
+
+@media (max-width:600px){
+    .cards{
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    }
+    .card:nth-child(1){
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .card:nth-child(4){
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .card:nth-child(5){
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+}
+
+@media (max-width:1000px){
+    .cards{
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    }
+}
